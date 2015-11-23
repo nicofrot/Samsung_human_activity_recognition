@@ -1,0 +1,51 @@
+Code Book
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+The experiment has been applied on 30 subjects.
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+-------------------------------------------------------------------------------
+Variables
+-------------------------------------------------------------------------------
+
+The final dataSet contains 68 variables: 
+
+1. SUBJECT: this is the subject identification. 
+
+2. ACTIVITY: the type of activity that a subject does
+
+3 to 68: several measurements described here in below. 
+If "XYZ" appears in the name, that means there are actually 3 variables in the data set, 1 for each direction: x, y, z.
+Each measurement brings 2 variables: one for the mean of this measurement, mean(), and one for the standard deviation
+of the measurement, sdv().  
+
+Example: tBodyAcc-XYZ (in the list) actually corresponds to 6 variable in the dataset: tBodyAcc mean() -X, tBodyAcc sdv() -X,
+tBodyAcc mean() -Y, tBodyAcc sdv() -Y etc..  
+ 
+tBodyAcc-XYZ  (m/s2)
+tGravityAcc-XYZ (m/s2)
+tBodyAccJerk-XYZ (m/s2)
+tBodyGyro-XYZ (rad/s)
+tBodyGyroJerk-XYZ: (rad/s)
+tBodyAccMag (m/s2)
+tGravityAccMag  (m/s2)
+tBodyAccJerkMag  (m/s2)
+tBodyGyroMag  (rad/s)
+tBodyGyroJerkMag  (rad/s)
+fBodyAcc-XYZ  (m/s2)
+fBodyAccJerk-XYZ  (m/s2)
+fBodyGyro-XYZ  (rad/s)
+fBodyAccMag (m/s2)
+fBodyAccJerkMag  (m/s2)
+fBodyGyroMag (rad/s)
+fBodyGyroJerkMag  (rad/s)
+
+
